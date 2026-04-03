@@ -1,0 +1,38 @@
+div{
+     height: 100px;
+     width: 100px;
+     background-color: pink;
+     transition-duration: 2s;
+}
+#div1:hover{
+     height: 200px;
+     width: 200px;
+     background-color: green;
+     border-radius: 50%;   
+}
+
+#div2:hover{
+     height: 200px;
+     width: 200px;
+     background-color: grey;
+     border-width: 100;
+     border-top-color:green;
+     border-bottom-color: red;
+     border: black;
+     border-style: dotted;
+     border-bottom-right-radius: 30%;   
+}
+
+#div3:hover{
+     height: 200px;
+     width: 200px;
+     background-color: yellow;
+     border-bottom-right-radius: 30%;   
+}
+
+#div4:hover{
+     height: 200px;
+     width: 200px;
+     background-color: orange;
+     border-bottom-left-radius: 40%;   
+}

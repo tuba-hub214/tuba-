@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>front page</title>
+
+<link rel="stylesheet" href="hafsa.css">
+
+<!-- Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body text="white">
+
+<div class="header">
+
+<h2 class="logo">AHZAA</h2>
+
+<div class="menu-btn" onclick="toggleMenu()">
+<i class="fa fa-bars"></i>
+</div>
+
+</div>
+
+<div id="menu" class="side-menu">
+
+<a href="page.html"><i class="fa fa-home"></i> Home</a>
+<div class="bottom-icons">
+
+</div>
+
+</div>
+<!-- Image Slider -->
+
+<div class="slider">
+
+<button class="prev" onclick="changeSlide(-1)">❮</button>
+
+<img id="slide" src="image1.jpg">
+
+<button class="next" onclick="changeSlide(1)">❯</button>
+
+</div>
+<script>
+
+function toggleMenu(){
+
+var x = document.getElementById("menu");
+
+if(x.style.display === "block")
+{
+x.style.display = "none";
+}
+else
+{
+x.style.display = "block";
+}
+
+}
+var images=[
+"omen1.jpg",
+"omen2.jpg",
+"omen3.jpg",
+"omen4.jpg",
+"omen5.jpg",
+];
+
+var index=0;
+
+function changeSlide(step){
+
+index=index+step;
+
+if(index>=images.length){
+index=0;
+}
+
+if(index<0){
+index=images.length-1;
+}
+
+document.getElementById("slide").src=images[index];
+
+}
+
+</script>
+<center>
+<h2 >Welcome To The OMEN GAming Laptop World</h2>
+<p >OMEN by HP offers a premium, integrated gaming ecosystem featuring<br> high-performance desktops (like the 45L with RTX 4090) <br>and laptops designed for competitive play. <br>The experience is centered around the OMEN Gaming Hub,<br> which enables hardware overclocking, AI-enhanced performance tuning, <br>RGB lighting control, and network optimization.</p></center>
+<div class="card-container">
+  <div class="card">
+    <img src="omen5.jpg" width="395px" height="400px">
+    <h3>GAMING LAPTOP</h3>
+    <p>A miracle that moves with you </p>
+    <button>Learn more</button> <br><br>
+  </div>
+    <div class="card">
+      <img src="omen3.jpg" width="395px" height="400px">
+      <h3>GAMING LAPTOP</h3>
+      <p>Go check out for more in products</p> 
+      <button>Learn more</button><br><br>  
+    </div>
+    <div class="card">
+      <img src="omen4.jpg" width="395px" height="400px">
+      <h3>GAMING LAPTOP</h3>
+      <p>Go check it out</p>
+      <button>Learn more</button> <br><br>
+    </div>
+  </div>
+
+</body>
+</html>

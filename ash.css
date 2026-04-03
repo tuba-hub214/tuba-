@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Laptop Hub</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+font-family:Arial;
+}
+
+.container{
+margin:20px;
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+button{
+background-color: #8B0000;
+  color:#FFFFFF;
+  padding:10px 40px;
+  border-radius:5px;
+  font-size:20px;
+}
+button:hover{
+  background-color:
+#ff1a1a
+}
+  
+  input{
+  border-radius:10px;
+  border:none;
+  margin:0px;
+  padding:8px;
+  background-color:#2b2b2b;
+    color:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Laptop hub</h2>
+
+<form>
+<label>NAME:</label>
+<input type="text" placeholder="NAME"><br><br>
+
+<label>EMAIL:</label>
+<input type="email" placeholder="EMAIL"><br><br>
+
+<label>PASSWORD:</label>
+<input type="password" placeholder="Password"><br><br>
+
+<label>PHONE:</label>
+<input type="tel" placeholder="Phone number"><br><br>
+
+<label>GENDER:</label>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female<br><br>
+
+<label>RAM:</label>
+<select>
+<option>8 GB</option>
+<option>16 GB</option>
+<option>32 GB</option>
+</select><br><br>
+  
+   <label>TYPE OF OMEN LAPTOPS</label><br><br>
+     &nbsp;<input type="checkbox" name="Computer">&nbsp;OMEN 15<br>
+    &nbsp;<input type="checkbox" name="Computer">&nbsp;OMEN 16<br>
+    &nbsp;<input type="checkbox" name="Computer">&nbsp;OMEN 17<br>
+     &nbsp;<input type="checkbox" name="Computer">&nbsp;OMEN TRANSCEND 14<br>
+    &nbsp;<input type="checkbox" name="Computer">&nbsp;OMEN TRANSCEND 16<br>
+    &nbsp;<input type="checkbox" name="Computer">&nbsp;OMEN MAX 16<br><br>
+    
+
+
+<button>Login</button>
+<button type="reset">Reset</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
